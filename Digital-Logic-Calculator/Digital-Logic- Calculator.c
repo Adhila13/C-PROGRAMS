@@ -1,0 +1,38 @@
+// DIGITAL LOGIC CALCULATOR
+#include <stdio.h>
+
+int main() {
+    int a,b,option;
+    printf("Enter two inputs:");
+    scanf("%d %d",&a,&b);
+    if((a!=1 || a!=0)&&(b!=1||b!=0)){
+        printf("Inputs must be 0 or 1");
+    }
+    else{
+        printf("Enter from 1 to 6 for:\n");
+        printf("1-AND\n");
+        printf("2-OR\n");
+        printf("3-NAND\n");
+        printf("4-NOR\n");
+        printf("5-XOR\n");
+        printf("6-XNOR\n");
+        printf("Option:");
+        scanf("%d",&option);
+        switch(option){
+            case 1:printf("%d",a&b);
+            break;
+            case 2:printf("%d",a|b);
+            break;
+            case 3:printf("%d",!(a&b));
+            break;
+            case 4:printf("%d",!(a|b));
+            break;
+            case 5:printf("%d",a^b);
+            break;
+            case 6:printf("%d",!(a^b));
+            break;
+            default:printf("Invalid Option");
+        }  
+    }
+    return 0;
+}
