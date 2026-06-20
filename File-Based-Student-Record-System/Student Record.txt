@@ -1,0 +1,11 @@
+----STUDENT RECORD----
+Name:joe
+Roll Number:20
+semester:4
+branch:ece
+CGPA:8.00
+Name:zui
+Roll Number:45
+semester:4
+branch:ece
+CGPA:8.00
